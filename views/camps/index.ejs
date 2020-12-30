@@ -1,0 +1,30 @@
+<%- include("../partials/header")%>
+
+
+<div class="x">
+	<header class="jumbotron">
+		<div class="contianer text-center">
+			<h1 style="font-family:'Love Ya Like A Sister', sans-serif;">
+				<img style="width:75px;height:75px;"src="../stylesheets/images/mvit7.png">
+				MVIT BHANGAR</h1>
+			<p>
+				<a class="btn btn-large" href="/camp/new">ADD PRODUCT</a>
+			</p>
+		</div>
+	</header>	
+	<div class="container">
+		<div class="row text-center" style="display:flex; flex-wrap:wrap;">
+		<% camp.forEach(function(camps){ %>
+			<div class="col-md-3 col-sm-6">
+				<div class="thumbnail" style="width:100%;background-color:#000;border: 2px solid #18CD40;border-radius8px;">
+				    <img src="../stylesheets/uploads/<%= camps.image %>" style="width:100%;height:225px;">
+					<h4 style="color:#fff;font-family: 'Permanent Marker', cursive;"> <%= camps.name %> </h4>
+					<a href="/camp/<%=camps._id%>" class="btn" style="margin-bottom:5px;">More Info</a>
+				</div>
+			</div>
+		<% }); %>
+		</div>
+	</div>
+</div>
+
+<%- include("../partials/footer")%>

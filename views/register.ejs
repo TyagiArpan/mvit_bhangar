@@ -1,0 +1,35 @@
+<%- include("./partials/header")%>
+
+<div class="container x">
+	<div class="row">
+		<div class="xyz">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div style="width:20%;margin:25px;">
+						<img  style="width:350px;height:500px;"src="https://wallpaperaccess.com/full/909804.jpg">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+				<h1 style="text-align:center;color:#fff;margin-top:175px;">Sign Up </h1>
+				<div style="width:50%;margin:25px auto;">
+					<form  action="/register" method="POST">
+						<div class="form-group">
+							<input class="form-control"type="text" placeholder="username" name="username">
+						</div>
+						<div class="form-group">
+							<input class="form-control"type="password" placeholder="password" name="password">
+						</div>
+						<div class="form-group">
+							<input class="form-control"type="text" placeholder="Admin Code" name="admincode">
+						</div>
+						<div class="form-group">
+							<button class="btn btn-large btn-block">Submit</button>
+						</div>
+					</form>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>		
+</div>
+<!-- <%- include("./partials/footer")%> -->

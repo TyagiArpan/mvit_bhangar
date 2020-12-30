@@ -1,0 +1,42 @@
+<%- include("../partials/header")%>
+<div class="container x">
+	<div class="row">
+		<div class="xyz">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div style="width:20%;margin:25px;">
+						<img  style="width:350px;height:500px;"src="https://wallpaperaccess.com/full/909804.jpg">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+		<h1 style="text-align:center;color:#fff;margin-top:175px;">Add a new product </h1>
+		<div style="width:50%;margin:0 auto;">
+			<form  action="/camp" method="POST" enctype="multipart/form-data">
+				<div class="form-group">
+					<input class="form-control" type="text" name="name" placeholder="product name">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="phnum" placeholder="mobile number">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="number" name="price" placeholder="price" min="1">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="file" name="image">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="descp" placeholder="description">
+				</div>
+				<button class="btn btn-large btn-block">Submit</button>
+			</form>
+			</div>	
+	</div>		
+</div>
+		</div>	
+	</div>		
+</div>
+			
+
+
+
+<!-- <%- include("../partials/footer")%> -->
